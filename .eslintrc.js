@@ -20,6 +20,9 @@ module.exports = {
   },
   plugins: ["react"],
   rules: {
+    "comma-dangle": ["error", "always-multiline"], // Add trailing commas for multiline objects and arrays
+    "no-trailing-spaces": "error", // Remove trailing spaces at the end of lines
+    quotes: ["error", "single"], // Enforce single quotes for strings
     "react/no-unescaped-entities": 0,
     "react/no-danger": 0,
     "react/jsx-max-props-per-line": 0,
@@ -74,9 +77,7 @@ module.exports = {
         specialLink: ["to", "hrefLeft", "hrefRight"],
         aspects: ["noHref", "invalidHref", "preferButton"]
       }
-    ],
-    // Add rule to enforce single quotes for strings
-    quotes: ["error", "single"]
+    ]
   },
   settings: {
     react: {
