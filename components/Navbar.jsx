@@ -12,7 +12,7 @@ const Navbar = () => (
     className={`${styles.xPaddings} py-8 relative`}
   >
     <div
-      className="absolute w-[50%] inset-0 gradient-01" // Corrected part highlighted
+      className="absolute w-[50%] inset-0 gradient-01" // Corrected part highlighted (removed trailing spaces)
     />
 
     <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}>
@@ -22,9 +22,7 @@ const Navbar = () => (
         className="w-[24px] h-[24px] object-contain"
       />
 
-      <h2
-        className="font-extrabold text-[24px] leading-[30px] text-white" // Corrected part highlighted
-      >
+      <h2 className="font-extrabold text-[24px] leading-[30px] text-white">
         MyWAY-UNIVERSE
       </h2>
 

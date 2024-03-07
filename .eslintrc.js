@@ -3,7 +3,14 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: ["plugin:react/recommended", "airbnb"],
+
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@next/next/recommended",
+    "airbnb"
+  ],
+
   parserOptions: {
     ecmaFeatures: {
       jsx: true
@@ -14,7 +21,7 @@ module.exports = {
   plugins: ["react"],
   rules: {
     "react/no-unescaped-entities": 0,
-    "eslintreact/no-danger": 0,
+    "react/no-danger": 0,
     "react/jsx-max-props-per-line": 0,
     "react/jsx-first-prop-new-line": 0,
     "no-console": 0,
@@ -67,6 +74,13 @@ module.exports = {
         specialLink: ["to", "hrefLeft", "hrefRight"],
         aspects: ["noHref", "invalidHref", "preferButton"]
       }
-    ]
+    ],
+    // Add rule to enforce single quotes for strings
+    quotes: ["error", "single"]
+  },
+  settings: {
+    react: {
+      version: "detect"
+    }
   }
 };
