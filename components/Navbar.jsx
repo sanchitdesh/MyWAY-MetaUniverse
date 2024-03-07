@@ -1,5 +1,3 @@
-/* eslint-disable quotes */
-
 "use client";
 
 import { motion } from "framer-motion";
@@ -14,24 +12,18 @@ const Navbar = () => (
     className={`${styles.xPaddings} py-8 relative`}
   >
     <div
-      className="absolute w-[50%] inset-0 
-    gradient-01"
+      className="absolute w-[50%] inset-0 gradient-01" // Corrected part highlighted
     />
 
-    <div
-      className={`${styles.innerWidth} mx-auto
-    flex justify-between gap-8`}
-    >
+    <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8`}>
       <img
         src="/search.svg"
         alt="search"
-        className="w-[24px] h-[24px] 
-        object-contain"
+        className="w-[24px] h-[24px] object-contain"
       />
 
       <h2
-        className="font-extrabold text-[24px] 
-      leading-[30px] text-white"
+        className="font-extrabold text-[24px] leading-[30px] text-white" // Corrected part highlighted
       >
         MyWAY-UNIVERSE
       </h2>

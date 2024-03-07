@@ -1,8 +1,3 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable lines-around-directive */
-/* eslint-disable quotes */
-/* eslint-disable import/newline-after-import */
-
 import styles from "../styles";
 
 const NewFeatures = ({ imgUrl, title, subtitle }) => (
